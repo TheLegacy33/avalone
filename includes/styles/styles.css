@@ -1,0 +1,165 @@
+html{
+    background: url(../images/fond_strille.png) repeat scroll 0 0 transparent;
+}
+
+body{
+    margin: 0;
+    padding: 0;    
+    color: #5D5D5D;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+a, a:active, a:link, a:visited, a:hover{
+    text-decoration: none;
+}
+
+.orange{
+    color: #DC861F;
+}
+
+.sandard{
+    color: #5D5D5D;
+}
+
+header{
+    height: 170px;
+    overflow: hidden;
+}
+
+header>div{
+    max-width: 1000px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left:  auto;
+    margin-right: auto;
+    height: 170px;
+}
+
+header>div #logo{
+    display: block;
+    position: absolute;
+    height: 120px;
+    width: 400px;
+    background-image: url(../images/logo_avalone.png);  
+    background-repeat: no-repeat;
+    background-position: 0px 10px;
+    background-size: 160px 110px;
+}
+
+header>div #logo>p.top{
+    position: absolute;
+    display: inline-block;
+    height: 60px;
+    font-size: 40px;
+    text-align: center;
+    width: 220px;
+    margin-left: 160px;
+    margin-top: 5px;
+    text-transform: capitalize;
+}
+
+header>div #logo>p.top:first-letter{
+    font-size: 48px;
+}
+
+header>div #logo>p.bottom{
+    position: absolute;
+    display: inline-block;
+    height: 40px;
+    text-align: left;
+    width: 220px;
+    margin-left: 160px;
+    margin-top: 70px;
+}
+
+header>div #logo, header>div #logo:active, header>div #logo:link, header>div #logo:visited, header>div #logo:hover{
+    color: #5D5D5D; 
+    font-weight: bold;   
+}
+
+header #search{
+    display: inline-block;
+    margin-left: 450px;
+    margin-top: 20px;
+}
+
+header #search div.query{
+    display: inline-block;
+}
+
+header #search div.query input[type=text]{
+    background-color: rgba(225,225,225,1); /*#e1e1e1;*/
+    border: medium none;
+    border-radius: 10px;
+    color: #9b9b9b;
+    height: 22px;
+    line-height: 22px;
+    padding: 0 30px 0 10px;
+    width: 150px;
+}
+
+header #search div.submit{
+    display: inline-block;
+    left: -25px;
+    position: relative;
+}
+
+header #search div.submit input[type=submit]{
+    background: url("../images/loupe.png") no-repeat scroll 0 5px transparent;
+    border: medium none;
+    cursor: pointer;
+    height: 22px;
+    width: 100%;
+    position: relative;
+}
+
+header #phonenumber{
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 680px;
+    width: 200px;
+    height: 30px;
+}
+
+header #phonenumber div.imgphone{
+    background: url("../images/phone.png") no-repeat scroll 0 5px transparent;
+    display: inline-block;
+    width: 18px;
+    height: 30px;
+}
+
+header #phonenumber div.imgnumber{
+    background: url("../images/phonenumber.png") no-repeat scroll 0px 2px transparent;
+    display: inline-block;
+    width: 128px;
+    height: 30px;
+}
+
+div.content_body{
+    background-image: url(../images/fond_degradegris.png);
+    background-position: center bottom;
+    background-repeat: repeat-x;
+    padding: 10px 5px;
+}
+
+footer.page_footer{
+    background-color: #484848;
+    color: white;
+    font-size: 0.9em;
+    line-height: 1.7em;
+    width: 100%;
+}
+
+footer.page_footer>.top{
+    background: none repeat scroll 0 0 #e4e3e3;
+    padding: 5px;
+    text-align: center;
+    color: #808080;
+}
+
+footer.page_footer>.bottom{
+    display: table;
+    margin: 0 auto;
+    max-width: 1000px;
+}
