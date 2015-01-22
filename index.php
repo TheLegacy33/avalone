@@ -10,7 +10,7 @@
 		<link rel="shortcut icon" href="favicon.ico" />
 		<link rel="stylesheet" href="includes/styles/styles.css" />
 	</head>
-	<body>
+	<body onload="initMenu('menutop');">
 		<div>
 			<header>
 				<div>
@@ -41,7 +41,7 @@
 					<nav>
 						<ul id="menutop">
 							<li>
-								<a href="index.html">Accueil</a>
+								<a href="index.php">Accueil</a>
 							</li>
 							<li>
 								<a href="">La société</a>
@@ -117,5 +117,7 @@
 				</div>
 			</footer>
 		</div>
+		<script src="includes/scripts/browserDetect.js" type="text/javascript"></script>
+		<script src="includes/scripts/dynMenu.js" type="text/javascript"></script>
 	</body>
 </html>
