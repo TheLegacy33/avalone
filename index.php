@@ -28,61 +28,70 @@
 							</div>
 						</form>
 					</div>
-					<div id="phonenumber">
-						<div class="imgphone">&nbsp;</div>
-						<div class="imgnumber">&nbsp;</div>
+					<div id="socials">
+						<a href="http://www.facebook.com" title="Follow us on Facebook !" target="_blank"><span class="facebook"></span></a>
+						<a href="http://www.twitter.com" title="Follow us on Twitter !" target="_blank"><span class="twitter"></span></a>
+						<a href="http://plus.google.com" title="Follow us on Google+ !" target="_blank"><span class="googleplus"></span></a>
+						<a href="contact.html" title="Email us !" target="_blank"><span class="mail"></span></a>
 					</div>
+					<div id="phonenumber">
+						<div class="imgphone"></div>
+						<div class="imgnumber"></div>
+					</div>
+					<nav>
+						<ul id="menutop">
+							<li>
+								<a href="index.html">Accueil</a>
+							</li>
+							<li>
+								<a href="">La société</a>
+								<ul>
+									<li><a href="">Qui sommes nous</a></li>
+									<li><a href="">Nos valeurs</a></li>
+									<li><a href="">Nous partenaires</a></li>
+									<li><a href="">Nous contacter</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="">Les applis</a>
+								<ul>
+									<li><a href="">Logiciels sur mesure</a></li>
+									<li><a href="">Langages utilisés</a></li>
+									<li><a href="">Bases de données</a></li>
+									<li><a href="">Applications métiers</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="">Le web</a>
+								<ul>
+									<li><a href="">Langages utilisés</a></li>
+									<li><a href="">Les supports média</a></li>
+									<li><a href="">Hébergement</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="">Le réseau</a>
+								<ul>
+									<li><a href="">Techonologies utilisées</a></li>
+									<li><a href="">Les systèmes</a></li>
+									<li><a href="">La maintenance</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="">La formation</a>
+							</li>
+							<li>
+								<a href="">Contact</a>
+								<ul>
+									<li><a href="">Nous contacter</a></li>
+									<li><a href="">Offres</a></li>
+									<li><a href="">Candidatures</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
 				</div>
 			</header>
-			<nav>
-				<ul>
-					<li>
-						<a href="index.html">Accueil</a>
-					</li>
-					<li>
-						<a href="">La société</a>
-						<ul>
-							<li><a href="">Qui sommes nous</a></li>
-							<li><a href="">Nos valeurs</a></li>
-							<li><a href="">Nous partenaires</a></li>
-							<li><a href="">Nous contacter</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="">Les applis</a>
-						<ul>
-							<li><a href="">Logiciels sur mesure</a></li>
-							<li><a href="">Langages utilisés</a></li>
-							<li><a href="">Bases de données</a></li>
-							<li><a href="">Applications métiers</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="">Le web</a>
-						<ul>
-							<li><a href="">Langages utilisés</a></li>
-							<li><a href="">Les supports média</a></li>
-							<li><a href="">Hébergement</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="">Le réseau</a>
-						<ul>
-							<li><a href="">Techonologies utilisées</a></li>
-							<li><a href="">Les systèmes</a></li>
-							<li><a href="">La maintenance</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="">Contact</a>
-						<ul>
-							<li><a href="">Nous contacter</a></li>
-							<li><a href="">Offres</a></li>
-							<li><a href="">Candidatures</a></li>
-						</ul>
-					</li>
-				</ul>
-			</nav>
 			<div class="content_body">
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc molestie egestas urna, ac egestas leo laoreet at. Mauris ac orci elit. Mauris ut erat sodales, semper nisl vel, elementum sapien. Praesent turpis justo, tempor in hendrerit vitae, feugiat vel eros. Integer id enim nulla. Suspendisse placerat gravida justo, et faucibus risus dapibus sed. Etiam quis lectus nec ante dignissim dictum et ut nisl. Aliquam et urna efficitur, dapibus nulla eu, faucibus ex. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin enim lacus, fringilla id volutpat non, lacinia vel tellus. Proin eget pulvinar tortor. Pellentesque ut mollis justo.

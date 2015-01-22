@@ -12,9 +12,10 @@ body{
 
 a, a:active, a:link, a:visited, a:hover{
     text-decoration: none;
+    color: #5D5D5D;
 }
 
-.orange{
+a:hover, .orange{
     color: #DC861F;
 }
 
@@ -79,9 +80,11 @@ header>div #logo, header>div #logo:active, header>div #logo:link, header>div #lo
 }
 
 header #search{
+    position: absolute;
     display: inline-block;
     margin-left: 450px;
-    margin-top: 20px;
+    margin-top: 5px;
+    
 }
 
 header #search div.query{
@@ -106,7 +109,7 @@ header #search div.submit{
 }
 
 header #search div.submit input[type=submit]{
-    background: url("../images/loupe.png") no-repeat scroll 0 5px transparent;
+    background: url(../images/loupe.png) no-repeat scroll 0 5px transparent;
     border: medium none;
     cursor: pointer;
     height: 22px;
@@ -114,26 +117,123 @@ header #search div.submit input[type=submit]{
     position: relative;
 }
 
+header #socials{
+    display: inline-block;
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 660px;
+    width: 100px;
+    height: 22px;
+}
+
+header #socials span{
+    display: inline-block;
+    background-color: transparent;
+    background-image: url(../images/img_widget.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    width: 16px;
+    height: 16px;
+}
+
+header #socials span.facebook{
+    background-position: 0px -96px;
+}
+
+header #socials span.twitter{
+    background-position: 0px -400px;
+}
+
+header #socials span.googleplus{
+    background-position: 0px -176px;
+}
+
+header #socials span.mail{
+    background-position: 0px -80px;
+}
+
 header #phonenumber{
     position: absolute;
-    margin-top: -30px;
-    margin-left: 680px;
+    margin-top: 0px;
+    margin-left: 800px;
     width: 200px;
     height: 30px;
 }
 
 header #phonenumber div.imgphone{
-    background: url("../images/phone.png") no-repeat scroll 0 5px transparent;
+    background: url(../images/phone.png) no-repeat scroll 0 5px transparent;
     display: inline-block;
     width: 18px;
     height: 30px;
 }
 
 header #phonenumber div.imgnumber{
-    background: url("../images/phonenumber.png") no-repeat scroll 0px 2px transparent;
+    background: url(../images/phonenumber.png) no-repeat scroll 0px 2px transparent;
     display: inline-block;
     width: 128px;
     height: 30px;
+}
+
+nav{
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 400px;
+    height: 39px;    
+}
+
+ul, ol{
+    list-style: outside none none;
+}
+
+#menutop{
+    margin: 0;
+    padding: 0;
+    color: #999999;
+    font-size: 1.2em;
+    height: 39px; 
+    width: 720px;   
+}
+
+#menutop li{
+    display: block;
+    list-style: outside none none;
+    float: left;
+    text-align: center;
+}
+
+#menutop li a:active, #menutop li a:visited, #menutop li a:link {
+    display: list-item;
+}
+
+#menutop>li>a {
+    margin-top: 0;
+    padding: 15px 16px;
+}
+
+ul#menutop>li>ul{
+    display: block;
+    position: absolute;
+    color: #999999;
+    font-size: 1em;
+    left: -20px;
+    width: 700px;
+}
+
+ul#menutop>li>ul li{
+    display: block;
+    list-style: outside none none;
+    float: left;
+    text-align: center;
+}
+
+ul#menutop>li>ul>li>a{
+    padding: 4px 8px;
+    font-size: 0.8em;
+}
+
+ul#menutop>li:nth-child(2)>ul{
+    display: block;
 }
 
 div.content_body{
