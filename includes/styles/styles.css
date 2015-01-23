@@ -10,6 +10,10 @@ body{
     font-size: 13px;
 }
 
+body>div{
+    width: 100%;
+}
+
 a, a:active, a:link, a:visited, a:hover{
     text-decoration: none;
     color: #5D5D5D;
@@ -29,7 +33,9 @@ header{
 }
 
 header>div{
-    max-width: 1000px;
+    min-width: 1100px;
+    width: 1200px;
+    max-width: 1300px;
     margin-top: 10px;
     margin-bottom: 0px;
     margin-left:  auto;
@@ -182,7 +188,7 @@ nav{
     height: 39px;    
 }
 
-ul, ol{
+nav ul, nav ol{
     list-style: outside none none;
 }
 
@@ -192,10 +198,11 @@ ul, ol{
     color: #999999;
     font-size: 1.2em;
     height: 39px; 
-    width: 720px;   
 }
 
 #menutop li{
+    margin: 0;
+    padding: 0;
     display: block;
     list-style: outside none none;
     float: left;
@@ -204,6 +211,8 @@ ul, ol{
 
 #menutop>li>a{
     color: #5D5D5D;
+    margin-top: 0;
+    padding: 15px 10px;
 }
 
 #menutop>li>a:hover{
@@ -286,11 +295,6 @@ ul, ol{
     display: list-item;
 }
 
-#menutop>li>a {
-    margin-top: 0;
-    padding: 15px 16px;
-}
-
 ul#menutop>li>ul{
     visibility: hidden;
     position: absolute;
@@ -302,6 +306,7 @@ ul#menutop>li>ul{
 }
 
 ul#menutop>li>ul li{
+    margin: 0px;
     display: block;
     list-style: outside none none;
     float: left;
@@ -323,15 +328,47 @@ ul#menutop>li>ul>li>a{
     font-size: 0.8em;
 }
 
-/*ul#menutop>li:nth-child(2)>ul{
-    visibility: visible;
-}*/
-
-div.content_body{
+section.content_body{
     background-image: url(../images/fond_degradegris.png);
     background-position: center bottom;
     background-repeat: repeat-x;
     padding: 10px 5px;
+}
+
+section.content_body>header{
+    height: 70px;
+    min-width: 1100px;
+    width: 1200px;
+    max-width: 1300px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left:  auto;
+    margin-right: auto;
+    font-size: 37px;
+    text-transform: uppercase;
+}
+
+section.content_body>header>section.ariane{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+section.content_body>article, section.content_body>div, section.content_body>section{
+    min-width: 1100px;
+    width: 1200px;
+    max-width: 1300px;
+    min-height: 200px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left:  auto;
+    margin-right: auto;
+    text-align: justify;   
+} 
+
+.content_body p:first-letter{
+    margin-left: 10px;
 }
 
 footer.page_footer{

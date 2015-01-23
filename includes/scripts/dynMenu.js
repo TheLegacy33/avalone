@@ -19,7 +19,9 @@ function initMenu(idMenu){
 		elementMenu = menu.children[i];
 		if (elementMenu.children.length > 1 && elementMenu.getElementsByTagName('ul').length > 0){
 			addAnEvent(elementMenu, 'mouseover', show);
+			addAnEvent(elementMenu, 'focus', show);
 			addAnEvent(elementMenu, 'mouseout', hide);
+			addAnEvent(elementMenu, 'blur', hide);
 		}
 	}
 }
@@ -27,7 +29,7 @@ function initMenu(idMenu){
 function show(){
 	var ssMenu = this.getElementsByTagName('ul')[0];
 	ssMenu.style.left = ((this.offsetLeft + (this.offsetWidth / 2)) - (ssMenu.offsetWidth / 2)) + "px";
-	ssMenu.style.left = this.offsetLeft - 30 + "px";
+	ssMenu.style.left = ((this.offsetLeft + (this.offsetWidth / 2)) - (ssMenu.offsetWidth / 2)) + "px";
 	//ssMenu.style.width = ssMenu.offsetWidth + "px";
 	ssMenu.style['visibility'] = 'visible';
 }
