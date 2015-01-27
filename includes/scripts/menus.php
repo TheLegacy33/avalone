@@ -40,6 +40,9 @@
 		}
 	}
 	
+	/**
+	 * Fonction permettant de générer les menus dans la zone de nav horizontale du header
+	 */
 	function geneMenuTop(){
 		$menuaccueil = new Menu('Accueil', 'Accueil', 'index.php');
 		
