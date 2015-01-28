@@ -64,12 +64,13 @@ header#pageheader>div #logo>p.top{
     text-align: center;
     width: 220px;
     margin-left: 160px;
-    margin-top: 5px;
+    margin-top: 0px;
     text-transform: capitalize;
+    letter-spacing: -0.1em;
 }
 
 header#pageheader>div #logo>p.top:first-letter{
-    font-size: 54px;
+    font-size: 62px;
 }
 
 header#pageheader>div #logo>span{
@@ -77,7 +78,7 @@ header#pageheader>div #logo>span{
     display: inline-block;
     font-size: 0.8em;
     margin-left: 160px;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 header#pageheader>div #logo>p.bottom{
