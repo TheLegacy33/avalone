@@ -178,6 +178,10 @@ header#pageheader #phonenumber{
     height: 40px;
 }
 
+header#pageheader #phonenumber a{
+    color: #DC861F;   
+}
+
 header#pageheader #phonenumber div.imgphone{
     background: url(../images/phone.png) no-repeat scroll 0 5px transparent;
     display: inline-block;

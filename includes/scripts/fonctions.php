@@ -1,6 +1,7 @@
 <?php
 	
 	include_once('menus.php');
+	include_once('Mobile_Detect.php');
 
 	/**
 	 * @author Michel GILLET
@@ -57,7 +58,13 @@
 	 */
 	function genePhoneNumber(){
 		$script = '<div id="phonenumber">'."\r";
-		$script .= '<div class="imgphone">05 57 26 79 23</div>'."\r";
+		$detect = new Mobile_Detect;
+		if ($detect->isMobile()){
+			$script .= '<div class="imgphone"><a href="tel:+33557267923">05 57 26 79 23</a></div>'."\r";	
+		}else{
+			$script .= '<div class="imgphone">05 57 26 79 23</div>'."\r";
+		}
+		
 		$script .= '</div>'."\r";
 		print($script);
 	}
