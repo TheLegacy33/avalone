@@ -30,12 +30,12 @@ a:hover, .orange{
     color: #5D5D5D;
 }
 
-header#pageheader{
+#pageheader{
     height: 170px;
     overflow: hidden;
 }
 
-header#pageheader>div{
+#pageheader>div{
     width: 1100px;
     max-width: 1300px;
     margin-top: 10px;
@@ -45,7 +45,7 @@ header#pageheader>div{
     height: 170px;
 }
 
-header#pageheader>div #logo{
+#logo{
     display: block;
     position: absolute;
     height: 120px;
@@ -54,9 +54,14 @@ header#pageheader>div #logo{
     background-repeat: no-repeat;
     background-position: 0px 10px;
     background-size: 160px 110px;
+    color: #5D5D5D; 
 }
 
-header#pageheader>div #logo>p.top{
+#logo:active, #logo:link, #logo:visited, #logo:hover{
+    font-weight: bold;   
+}
+
+#logo>p.top{
     position: absolute;
     display: inline-block;
     height: 60px;
@@ -69,11 +74,11 @@ header#pageheader>div #logo>p.top{
     letter-spacing: -0.1em;
 }
 
-header#pageheader>div #logo>p.top:first-letter{
+#logo>p.top:first-letter{
     font-size: 62px;
 }
 
-header#pageheader>div #logo>span{
+#logo>span{
     position: absolute;
     display: inline-block;
     font-size: 0.8em;
@@ -81,7 +86,7 @@ header#pageheader>div #logo>span{
     margin-top: 15px;
 }
 
-header#pageheader>div #logo>p.bottom{
+#logo>p.bottom{
     position: absolute;
     display: inline-block;
     height: 40px;
@@ -91,12 +96,7 @@ header#pageheader>div #logo>p.bottom{
     margin-top: 70px;
 }
 
-header#pageheader>div #logo, header#pageheader>div #logo:active, header#pageheader>div #logo:link, header#pageheader>div #logo:visited, header#pageheader>div #logo:hover{
-    color: #5D5D5D; 
-    font-weight: bold;   
-}
-
-header#pageheader #search{
+#search{
     position: absolute;
     display: inline-block;
     margin-left: 470px;
@@ -104,12 +104,12 @@ header#pageheader #search{
     
 }
 
-header#pageheader #search div.query{
+#search div.query{
     display: inline-block;
 }
 
-header#pageheader #search div.query input[type=text]{
-    background-color: rgba(225,225,225,1); /*#e1e1e1;*/
+#search div.query input[type=text]{
+    background-color: rgba(225,225,225,1); 
     border: medium none;
     border-radius: 10px;
     color: #9b9b9b;
@@ -119,31 +119,38 @@ header#pageheader #search div.query input[type=text]{
     width: 150px;
 }
 
-header#pageheader #search div.submit{
+#search div.submit{
     display: inline-block;
     left: -25px;
     position: relative;
 }
 
-header#pageheader #search div.submit input[type=submit]{
-    background: url(../images/loupe.png) no-repeat scroll 0 5px transparent;
+#search div.submit input[type=submit]{
+    background: url(../images/loupe.png) no-repeat scroll 5px 5px transparent;
     border: medium none;
     cursor: pointer;
     height: 22px;
-    width: 100%;
-    position: relative;
+    width: 25px;
 }
 
-header#pageheader #socials{
-    display: inline-block;
+#socials{
     position: absolute;
-    margin-top: 23px;
+    margin-top: 18px;
     margin-left: 690px;
     width: 100px;
     height: 22px;
 }
 
-header#pageheader #socials span{
+#socials a{
+    display: inline-block;
+    line-height: 10px;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    margin: 0 3px;
+}
+
+#socials span{
     display: inline-block;
     background-color: transparent;
     background-image: url(../images/img_widget.png);
@@ -152,25 +159,26 @@ header#pageheader #socials span{
     background-size: cover;
     width: 16px;
     height: 16px;
+    vertical-align: top;
 }
 
-header#pageheader #socials span.facebook{
+#socials span.facebook{
     background-position: 0px -96px;
 }
 
-header#pageheader #socials span.twitter{
+#socials span.twitter{
     background-position: 0px -400px;
 }
 
-header#pageheader #socials span.googleplus{
+#socials span.googleplus{
     background-position: 0px -176px;
 }
 
-header#pageheader #socials span.mail{
+#socials span.mail{
     background-position: 0px -80px;
 }
 
-header#pageheader #phonenumber{
+#phonenumber{
     position: absolute;
     margin-top: 12px;
     margin-left: 800px;
@@ -178,17 +186,15 @@ header#pageheader #phonenumber{
     height: 40px;
 }
 
-header#pageheader #phonenumber a{
+#phonenumber a{
     color: #DC861F;   
 }
 
-header#pageheader #phonenumber div.imgphone{
+#phonenumber div.imgphone{
     background: url(../images/phone.png) no-repeat scroll 0 5px transparent;
     display: inline-block;
     width: 18px;
     height: 30px;
-    
-    /*background: url(../images/phonenumber.png) no-repeat scroll 0px 2px transparent;*/
     padding-left: 30px;
     line-height: 30px;
     font-size: 30px;
@@ -200,14 +206,14 @@ header#pageheader #phonenumber div.imgphone{
     word-spacing: -0.1em;
 }
 
-header#pageheader nav{
+#pageheader nav{
     position: absolute;
     margin-top: 50px;
     margin-left: 410px;
     height: 39px;    
 }
 
-header#pageheader nav ul, nav ol{
+#pageheader nav ul, #pageheader nav ol{
     list-style: outside none none;
 }
 
@@ -242,7 +248,6 @@ header#pageheader nav ul, nav ol{
 }
 
 #menutop>li:nth-child(1)>a{
-    /*color: #FFCE79;*/
     color: #861E00;
 }
 
@@ -253,7 +258,6 @@ header#pageheader nav ul, nav ol{
 }
 
 #menutop>li:nth-child(2)>a{
-    /*color: #FFC279;*/
     color: #864900;
 }
 
@@ -264,7 +268,6 @@ header#pageheader nav ul, nav ol{
 }
 
 #menutop>li:nth-child(3)>a{
-    /*color: #EAA14B;*/
    color: #AD650F;
 }
 
@@ -318,7 +321,7 @@ header#pageheader nav ul, nav ol{
     display: list-item;
 }
 
-ul#menutop>li>ul{
+#menutop>li>ul{
     visibility: hidden;
     position: absolute;
     color: #999999;
@@ -328,7 +331,7 @@ ul#menutop>li>ul{
     width: 170px;
 }
 
-ul#menutop>li>ul li{
+#menutop>li>ul li{
     margin: 0px;
     display: block;
     list-style: outside none none;
@@ -338,15 +341,15 @@ ul#menutop>li>ul li{
     background-color: rgba(200, 200, 200, 1);
 }
 
-ul#menutop>li>ul li:first-child{
+#menutop>li>ul li:first-child{
     border-radius: 8px 8px 0px 0px;
 }
 
-ul#menutop>li>ul li:last-child{
+#menutop>li>ul li:last-child{
     border-radius: 0px 0px 8px 8px ;
 }
 
-ul#menutop>li>ul>li>a{
+#menutop>li>ul>li>a{
     padding: 4px 8px;
     font-size: 0.8em;
 }
@@ -387,64 +390,70 @@ section.content_body>article, section.content_body>div, section.content_body>sec
     margin-right: auto;   
 } 
 
-section#texte_accueil{
+#texte_accueil{
     font-size: 26px; 
 }
 
-section#texte2_accueil{
+#texte2_accueil{
     max-width: 1100px;
     margin-left:  auto;
     margin-right: auto; 
     text-align: center;
 }
 
-section#texte2_accueil>div{
+.infobox{
     display: inline-block;
     font-size: 13px;
-    margin: 0 30px;
-    width: 33%; 
-    max-width: 250px;
+    margin: 20px 30px;
     cursor: pointer;
     vertical-align: top;
+    width: 300px;
+    min-width: 200px;
 }
 
-section#texte2_accueil>div>header{
+.infobox > header{
     font-size: 16px;
     font-weight: bold;
     text-align: center;
     width: 100%; 
+    height: 50px;
 }
 
-section#texte2_accueil>div>div.img{
+.infobox > div.img{
     margin-top: 10px;
     height: 150px;
-    background-image: url(../images/logo_formation.png);
     background-size: 250px;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%; 
 }
 
-section#texte2_accueil>div:first-child>div.img{
+.infobox.infoformation .img{
+    background-image: url(../images/logo_formation.png);
+}
+
+.infobox.infomultisupport .img{
     background-image: url(../images/multi_support.png);
 }
 
-section#texte2_accueil>div:nth-child(2)>div.img{
+.infobox.infologiciels .img{
     background-image: url(../images/img_application.png);
 }
 
-section#texte2_accueil>div>article{
+.infobox article{
     margin-top: 10px;
     width: 100%; 
+    height: 70px;
+    text-align: justify;
 }
 
-section#texte2_accueil>div>div.link{
+.infobox .link{
     margin-top: 10px;
-    display: inline-block !important;
     width: 100%;
+    text-align: center;
 }
 
-section#texte2_accueil>div>div.link>div{
+.infobox .link > div{
     background-color: #f5f5f5;
     border-radius: 4px;
     margin: 1px;
@@ -464,7 +473,7 @@ section#texte2_accueil>div>div.link>div{
     white-space: nowrap;
 }
 
-section#texte2_accueil>div>div.link>div:hover{
+.infobox .link > div:hover{
     background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.15));
 }
 

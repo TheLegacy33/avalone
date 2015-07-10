@@ -38,8 +38,8 @@
 					de la mise en place à la formation, jusqu'au support.<br />
 					Notre équipe possède une forte expertise dans le domaine ...<br /> 
 				</section>
-				<section id="texte2_accueil">
-					<div>
+				<section>
+					<div class="infobox infomultisupport" onclick="document.location.href='sitesinternet.php'">
 						<header>... des interfaces et applications web</header>
 						<div class="img"></div>
 						<article>
@@ -47,7 +47,7 @@
 						</article>
 						<div class="link"><div onclick="document.location.href='sitesinternet.php'">Lire la suite</div></div>
 					</div>
-					<div>
+					<div class="infobox infologiciels" onclick="document.location.href='sitesinternet.php'">
 						<header>... des logiciels métiers et leurs sources de données</header>
 						<div class="img"></div>
 						<article>
@@ -55,7 +55,7 @@
 						</article>
 						<div class="link"><div onclick="document.location.href='recherche_developpement.php'">Lire la suite</div></div>
 					</div>
-					<div>
+					<div class="infobox infoformation" onclick="document.location.href='sitesinternet.php'">
 						<header>... l'accompagnement et la formation des utilisateurs</header>
 						<div class="img"></div>
 						<article>

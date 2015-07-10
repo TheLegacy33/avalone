@@ -15,11 +15,11 @@
 	 * Génération du code pour l'écriture du logo dans le header
 	 */
 	function geneLogo(){
-		$script = '<a id="logo" href="index.php">'."\r";
-		$script .= '<p class="top"><span class="orange">AVA</span><span class="standard">LONE</span></p>'."\r";
-		$script .= '<span>&copy;</span>'."\r";
-		$script .= '<p class="bottom">Solutions de développement Web &amp; Applicatives</p>'."\r";	
-		$script .= '</a>'."\r";
+		$script = '<a id="logo" href="index.php">';
+		$script .= '<p class="top"><span class="orange">AVA</span><span class="standard">LONE</span></p>';
+		$script .= '<span>&copy;</span>';
+		$script .= '<p class="bottom">Solutions de développement Web &amp; Applicatives</p>';	
+		$script .= '</a>';
 		print($script);
 	}
 	
@@ -27,16 +27,16 @@
 	 * Génération du code pour le formulaire de recherche dans le header
 	 */
 	function geneSearchForm(){
-		$script = '<div id="search">'."\r";
-		$script .= '<form id="search-box" method="get" action="" name="search">'."\r";
-		$script .= '<div class="query">'."\r";
-		$script .= '<input type="text" value="Rechercher..." name="q" onclick="this.value=\'\'">'."\r";
-		$script .= '</div>'."\r";
-		$script .= '<div class="submit">'."\r";
-		$script .= '<input type="submit" alt="Rechercher" value="">'."\r";
-		$script .= '</div>'."\r";
-		$script .= '</form>'."\r";
-		$script .= '</div>'."\r";
+		$script = '<div id="search">';
+		$script .= '<form id="search-box" method="get" action="" name="search">';
+		$script .= '<div class="query">';
+		$script .= '<input type="text" value="Rechercher..." name="q" onclick="this.value=\'\'">';
+		$script .= '</div>';
+		$script .= '<div class="submit">';
+		$script .= '<input type="submit" alt="Rechercher" value="">';
+		$script .= '</div>';
+		$script .= '</form>';
+		$script .= '</div>';
 		print($script);
 	}
 	
@@ -44,12 +44,12 @@
 	 * Génération du code pour les liens avec les réseaux sociaux dans le header
 	 */
 	function geneSocialLinks(){
-		$script = '<div id="socials">'."\r";
-		$script .= '<a href="https://www.facebook.com/SarlAvalone" title="Follow us on Facebook !" target="_blank"><span class="facebook"></span></a>'."\r";
-		$script .= '<a href="http://www.twitter.com" title="Follow us on Twitter !" target="_blank"><span class="twitter"></span></a>'."\r";
-		$script .= '<a href="https://plus.google.com/+SarlAvalonePessac" title="Follow us on Google+ !" target="_blank"><span class="googleplus"></span></a>'."\r";
-		$script .= '<a href="contactus.php" title="Email us !" target="_blank"><span class="mail"></span></a>'."\r";
-		$script .= '</div>'."\r";
+		$script = '<div id="socials">';
+		$script .= '<a href="https://www.facebook.com/SarlAvalone" title="Follow us on Facebook !" target="_blank"><span class="facebook"></span></a>';
+		$script .= '<a href="http://www.twitter.com" title="Follow us on Twitter !" target="_blank"><span class="twitter"></span></a>';
+		$script .= '<a href="https://plus.google.com/+SarlAvalonePessac" title="Follow us on Google+ !" target="_blank"><span class="googleplus"></span></a>';
+		$script .= '<a href="contactus.php" title="Email us !"><span class="mail"></span></a>';
+		$script .= '</div>';
 		print($script);
 	}
 	
