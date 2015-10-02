@@ -30,6 +30,12 @@ a:hover, .orange{
     color: #5D5D5D;
 }
 
+div.clear{
+    width: 100%;
+    clear: both;
+    height: 1px;
+}
+
 #pageheader{
     height: 170px;
     overflow: hidden;
@@ -373,12 +379,29 @@ section.content_body>header{
     text-transform: uppercase;
 }
 
-section.content_body>header>section.ariane{
+section.ariane{
     width: 100%;
     height: 20px;
     line-height: 20px;
     font-size: 12px;
     color: white;
+}
+
+section.ariane a{
+    color: white;
+}
+
+section.ariane a:hover{
+    text-decoration: underline;
+}
+
+section.ariane .sep{
+     display: inline-block; 
+     padding: 0 10px;
+}
+
+section.ariane a:last-child{
+    color: rgba(255, 255, 255, 0.5);
 }
 
 section.content_body>article, section.content_body>div, section.content_body>section{
@@ -405,7 +428,7 @@ section.content_body>article, section.content_body>div, section.content_body>sec
     display: inline-block;
     font-size: 13px;
     margin: 20px 30px;
-    cursor: pointer;
+    cursor: default;
     vertical-align: top;
     width: 300px;
     min-width: 200px;
@@ -475,6 +498,61 @@ section.content_body>article, section.content_body>div, section.content_body>sec
 
 .infobox .link > div:hover{
     background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.15));
+}
+
+.ligne.full {
+    width: 100%;
+    min-width: 300px;
+    margin-top: 40px;
+}
+
+.ligne>div, .ligne>article {
+    display: inline-block;
+    vertical-align: top;
+    text-align: justify;
+}
+
+.ligne .image.gauche{
+    max-width: 300px;
+}
+
+.ligne .texte.droite{
+    margin-left: 2%;
+    max-width: 700px;
+}
+
+.ligne .texte.gauche{
+    max-width: 700px;
+}
+
+.ligne .image.droite{
+    margin-left: 2%;
+    max-width: 300px;
+}
+
+.image img{
+    max-width: 300px;
+}
+
+.ligne a{
+    border-bottom: dashed 1px;
+    font-weight: bold;
+    color: #DC861F;
+}
+
+.ligne article header.titre{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.ligne .gauche header.titre{
+    text-align: left;
+}
+
+.ligne .droite header.titre{
+    text-align: right;
 }
 
 footer.page_footer{
